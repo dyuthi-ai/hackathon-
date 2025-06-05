@@ -1,0 +1,152 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./image/5.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    width: 400px;
+    margin: 20px;
+    cursor: pointer;
+    padding: 20px;
+}
+.content{
+    top:50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: black;
+   
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+           color:red;
+}
+.content button{
+    padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #000000, #1e1e1e);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.content button img{
+    width: 25px;
+    margin-left: 10px;
+   
+}
+.content button:hover {
+    background: #ffcc00;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px #ffcc00;
+  }
+  .container content button{
+    display:flex;
+    justify-content: center;
+  }
+.launch_time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.launch_time div{
+    flex-basis: 100px;
+}
+.launch_time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+  .time{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: time 4s linear infinite;
+
+  }
+
+  @keyframes time{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: auto;
+      padding: 20px 5%;
+      background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+    }
+  
+    .content {
+      position: static ;
+      transform: none ;
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    .content h1 {
+      font-size: 1.8rem;
+      line-height: 1.3;
+      word-wrap: break-word;
+      z-index: 2;
+    }
+  
+    .launch_time {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+  
+    .launch_time div p {
+      font-size: 2rem;
+    }
+  
+    .logo {
+      width: 60%;
+      margin-bottom: 10px;
+    }
+  
+    .content button {
+      margin-top: 20px;
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    .content p {
+      font-size: 1rem;
+      color: #555;
+    }
+  } 
+  
+  
+  
